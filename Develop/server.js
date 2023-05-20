@@ -1,3 +1,4 @@
+require('dotenv').config();
 const express = require('express');
 const routes = require('./routes');
 const sequelize = require('./config/connection');
@@ -19,4 +20,5 @@ app.use(routes);
     console.error('Failed to start the server:', error);
   }
 })();
+
 
